@@ -5,4 +5,4 @@ allows UAB's XX projects to be compiled and executed via docker images
 ``docker build --tag uab-xx .``
 
 ## publishing instructions
-``docker push uab-xx``
+``docker push quiquelhappy/uab-xx``
