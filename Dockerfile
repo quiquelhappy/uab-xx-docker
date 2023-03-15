@@ -1,4 +1,2 @@
 FROM debian
-COPY ./install.sh /bin/install.sh
-RUN ["chmod", "+x", "/bin/install.sh"]
-ENTRYPOINT /bin/install.sh
+RUN apt update && apt remove -y netcat-openbsd && apt install -y gdb strace build-essential cmake protobuf-compiler netcat-traditional libssl-dev
